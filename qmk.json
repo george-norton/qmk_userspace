@@ -1,4 +1,7 @@
 {
     "userspace_version": "1.0",
-    "build_targets": []
+    "build_targets": [
+        ["ploopyco/bean/rev1_001", "default"],
+        ["ploopyco/bean/rev1_001", "maccel"]
+    ]
 }
