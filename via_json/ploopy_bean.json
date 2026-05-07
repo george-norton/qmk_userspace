@@ -1,0 +1,114 @@
+{
+    "name": "Ploopy Bean",
+    "vendorId": "0x5043",
+    "productId": "0x81DC",
+    "matrix": {
+        "rows": 1,
+        "cols": 4
+    },
+    "customKeycodes": [],
+    "layouts": {
+        "keymap": [
+            [
+                {
+                    "h": 1.5,
+                    "w": 1.5
+                },
+                "0,0",
+                {
+                    "x": 0.5,
+                    "h": 1.5,
+                    "w": 1.5
+                },
+                "0,1"
+            ],
+            [
+                {
+                    "y": 1.0,
+                    "h": 2,
+                    "w": 1.5
+                },
+                "0,2",
+                {
+                    "x": 0.5,
+                    "h": 2,
+                    "w": 1.5
+                },
+                "0,3"
+            ]
+        ]
+    },
+    "menus": [
+        {
+            "content": [
+                {
+                    "content": [
+                        {
+                            "content": [
+                                "id_maccel_enabled",
+                                24,
+                                5
+                            ],
+                            "label": "Enabled",
+                            "type": "toggle"
+                        },
+                        {
+                            "content": [
+                                "id_maccel_takeoff",
+                                24,
+                                1
+                            ],
+                            "label": "Takeoff",
+                            "options": [
+                                0,
+                                60000
+                            ],
+                            "type": "range"
+                        },
+                        {
+                            "content": [
+                                "id_maccel_growth_rate",
+                                24,
+                                2
+                            ],
+                            "label": "Growth Rate",
+                            "options": [
+                                0,
+                                60000
+                            ],
+                            "type": "range"
+                        },
+                        {
+                            "content": [
+                                "id_maccel_offset",
+                                24,
+                                3
+                            ],
+                            "label": "Offset",
+                            "options": [
+                                0,
+                                60000
+                            ],
+                            "type": "range"
+                        },
+                        {
+                            "content": [
+                                "id_maccel_limit",
+                                24,
+                                4
+                            ],
+                            "label": "Limit",
+                            "options": [
+                                0,
+                                60000
+                            ],
+                            "type": "range"
+                        }
+                    ],
+                    "label": "Acceleration"
+                }
+            ],
+            "label": "Mouse acceleration"
+        }
+    ]
+}
