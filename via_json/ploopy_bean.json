@@ -6,33 +6,44 @@
         "rows": 1,
         "cols": 4
     },
-    "customKeycodes": [],
+    "customKeycodes": [
+        {
+            "name": "DPI Config",
+            "title": "DPI Config",
+            "shortName": "DPI"
+        },
+        {
+            "name": "Drag Scroll",
+            "title": "Drag Scroll",
+            "shortName": "DragScl"
+        }
+    ],
     "layouts": {
         "keymap": [
             [
                 {
-                    "h": 1.5,
-                    "w": 1.5
+                    "w": 2,
+                    "h": 2
                 },
-                "0,0",
+                "0,1",
                 {
-                    "x": 0.5,
-                    "h": 1.5,
-                    "w": 1.5
+                    "x": 0.25,
+                    "w": 2,
+                    "h": 2
                 },
-                "0,1"
+                "0,2"
             ],
             [
                 {
-                    "y": 1.0,
-                    "h": 2,
-                    "w": 1.5
+                    "y": 1.25,
+                    "w": 2,
+                    "h": 2
                 },
-                "0,2",
+                "0,0",
                 {
-                    "x": 0.5,
-                    "h": 2,
-                    "w": 1.5
+                    "x": 0.25,
+                    "w": 2,
+                    "h": 2
                 },
                 "0,3"
             ]
