@@ -121,5 +121,27 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
     [LAYER_RAISE]      = {ENCODER_CCW_CW(KC_PGUP, KC_PGDN), ENCODER_CCW_CW(KC_VOLD, KC_VOLU)},
     [LAYER_POINTER]    = {ENCODER_CCW_CW(RM_HUED, RM_HUEU), ENCODER_CCW_CW(RM_SATD, RM_SATU)},
 };
+
+extern bool digitizer_send_mouse_reports;
+
+bool process_detected_host_os_kb(os_variant_t detected_os) {
+    if (!process_detected_host_os_user(detected_os)) {
+        return false;
+    }
+    switch (detected_os) {
+        case OS_MACOS:
+        case OS_IOS:
+            // Force mouse mode
+            digitizer_send_mouse_reports = true;
+            break;
+        case OS_WINDOWS:
+        case OS_LINUX:
+        case OS_UNSURE:
+            // Rely on autodetection of mouse mode
+            break;
+    }
+    return true;
+}
+
 // clang-format on
 #endif // ENCODER_MAP_ENABLE
