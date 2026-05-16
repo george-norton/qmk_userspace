@@ -15,8 +15,10 @@
         ["georgen/peacock/v1_01", "acrylic"],
         ["georgen/peacock/v1_00", "stylus"],
         ["georgen/peacock/v1_01", "stylus"],
-        ["bastardkb/dilemma/3x5_3_procyon", "default"],
-	["handwired/onekey/rp2040", "digitizer"]
-
+        ["bastardkb/dilemma/3x5_3_procyon", "vendor"],
+        ["bastardkb/dilemma/3x5_3_procyon", "force_mouse"],
+        ["bastardkb/dilemma/4x6_4_procyon", "vendor"],
+        ["bastardkb/dilemma/4x6_4_procyon", "force_mouse"],
+        ["handwired/onekey/rp2040", "digitizer"]
     ]
 }
