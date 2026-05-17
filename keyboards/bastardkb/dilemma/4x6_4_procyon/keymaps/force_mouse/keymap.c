@@ -122,7 +122,7 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
     [LAYER_POINTER]    = {ENCODER_CCW_CW(RM_HUED, RM_HUEU), ENCODER_CCW_CW(RM_SATD, RM_SATU)},
 };
 
-extern bool digitizer_send_mouse_reports;
+extern bool force_digitizer_send_mouse_reports;
 
 bool process_detected_host_os_kb(os_variant_t detected_os) {
     if (!process_detected_host_os_user(detected_os)) {
@@ -135,7 +135,7 @@ bool process_detected_host_os_kb(os_variant_t detected_os) {
         case OS_LINUX:
         case OS_UNSURE:
             // Force mouse mode
-            digitizer_send_mouse_reports = true;
+            force_digitizer_send_mouse_reports = true;
             break;
     }
     return true;
